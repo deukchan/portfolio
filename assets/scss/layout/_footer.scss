@@ -1,0 +1,21 @@
+.footer{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 30px 50px;
+    color: #fff;
+    @include mobile {
+        padding-bottom: 70px;
+    }
+    i{margin-right: 10px;}
+    .copy{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include mobile {
+            top: 80px;
+            white-space: nowrap;
+        }
+    }
+}

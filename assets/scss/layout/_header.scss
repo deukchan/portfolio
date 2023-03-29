@@ -1,0 +1,44 @@
+.header{
+    position: fixed;
+    top: 0;left: 0;
+    width: 100%;
+    color: #fff;
+    z-index: 10;
+    font-family: $font-en1;
+    .group-header{
+        padding: 0 30px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        @include mobile {
+            height: 60px;
+        }
+        .logo{
+            font-size: 18px;
+            font-weight: bold;
+            @include mobile {
+                font-size: 14px;
+            }   
+        }
+        .time{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            color: #d72539;
+            font-family: $font-en1;
+            @include mobile {
+                top: 60px;
+                transform: translate(-50%, 0);
+            }
+        }
+        .btn-talk{
+            @include mobile{
+                font-size: 12px;
+            }
+        }
+    }
+}
